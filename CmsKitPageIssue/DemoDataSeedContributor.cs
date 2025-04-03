@@ -31,7 +31,7 @@ public class DemoDataSeedContributor : IDataSeedContributor, ITransientDependenc
 
     public virtual async Task SeedAsync(DataSeedContext context)
     {
-        await TryCreateHomePageAsync(null, "Host home page");
+        // await TryCreateHomePageAsync(null, "Host home page"); // todo: You enable this line, the problem is gone.
 
         var tenant = await GetOrCreateDemoTenantAsync();
 
