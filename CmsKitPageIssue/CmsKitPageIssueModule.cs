@@ -188,7 +188,7 @@ public class CmsKitPageIssueModule : AbpModule
         ConfigureMultiTenancy();
         ConfigureUrls(configuration);
         ConfigureBundles();
-        ConfigureHealthChecks(context);
+        // ConfigureHealthChecks(context);
         ConfigureAutoMapper(context);
         ConfigureSwagger(context.Services);
         ConfigureAutoApiControllers();
@@ -382,7 +382,7 @@ public class CmsKitPageIssueModule : AbpModule
             app.UseMultiTenancy();
         }
 
-        app.UseUnitOfWork();
+        // app.UseUnitOfWork();
         app.UseDynamicClaims();
         app.UseAuthorization();
 
